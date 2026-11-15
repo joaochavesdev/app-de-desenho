@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App de Desenho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="barra">
+    <div class="grupo">
+      <button id="btn-pincel" class="btn ativo" type="button">Pincel</button>
+      <button id="btn-borracha" class="btn" type="button">Borracha</button>
+    </div>
+
+    <div class="grupo">
+      <label for="cor">Cor</label>
+      <input id="cor" type="color" value="#1f2430" />
+    </div>
+
+    <div class="grupo">
+      <label for="espessura">Espessura</label>
+      <input id="espessura" type="range" min="1" max="40" value="4" />
+      <span id="valor-espessura">4</span>
+    </div>
+
+    <div class="grupo">
+      <button id="btn-desfazer" class="btn" type="button">Desfazer</button>
+      <button id="btn-limpar" class="btn" type="button">Limpar</button>
+      <button id="btn-salvar" class="btn btn-primario" type="button">Salvar PNG</button>
+    </div>
+  </header>
+
+  <main class="area">
+    <canvas id="tela" width="1000" height="600"></canvas>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
